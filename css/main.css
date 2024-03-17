@@ -1,0 +1,46 @@
+:root {
+    --color-bg: #4d5061;
+    --color-bg-shade: #3e404e;
+    --color-fg: #b9d8c2;
+    --color-accent: #9ac2c9;
+}
+
+::selection {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-bg);
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    border: 1.25rem solid var(--color-bg-shade);
+}
+
+@media screen and (min-width: 64em){
+    main {
+        border: 2.5rem solid var(--color-bg-shade);
+    }
+}
+
+h1 {
+    margin: 0;
+    font-family: Kalnia, serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1;
+    text-align: center;
+    color: var(--color-fg);
+}
+
+@media screen and (min-width: 64em){
+    h1 {
+        font-size: 5rem;
+    }
+}
